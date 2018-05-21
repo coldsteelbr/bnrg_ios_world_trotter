@@ -27,10 +27,18 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        print("Current text: \(textField.text)")
-        print("Replacement text: \(string)")
         
-        return true
+        let valueHasDot = textField.text?.range(of: ".")
+        let enterHasDot = string.range(of: ".")
+        
+        print("Value: \(String(describing: valueHasDot?.isEmpty))")
+        print("Enter: \(String(describing: enterHasDot?.isEmpty))")
+        
+        if valueHasDot != nil, enterHasDot != nil {
+            return false
+        }else{
+            return true
+        }
     }
     
     var fahrenheitValue: Measurement<UnitTemperature>?{
