@@ -54,9 +54,11 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
         }
         
         // avoiding double decimal point
+        let currentLocale = Locale.current
+        let decimalSeparator = currentLocale.decimalSeparator ?? "."
         
-        let valueHasDot = textField.text?.range(of: ".")
-        let enterHasDot = string.range(of: ".")
+        let valueHasDot = textField.text?.range(of: decimalSeparator)
+        let enterHasDot = string.range(of: decimalSeparator)
         
         print("Value: \(String(describing: valueHasDot?.isEmpty))")
         print("Enter: \(String(describing: enterHasDot?.isEmpty))")
@@ -90,8 +92,8 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
     }
     
     @IBAction func fahrenheitFieldEdittingChanged(_ textField: UITextField){
-        if let text = textField.text, let value = Double(text) {
-            fahrenheitValue = Measurement(value: value, unit: .fahrenheit)
+        if let text = textField.text, let number = numberFormatter.number(from: text) {
+            fahrenheitValue = Measurement(value: number.doubleValue, unit: .fahrenheit)
         } else {
             fahrenheitValue = nil
         }

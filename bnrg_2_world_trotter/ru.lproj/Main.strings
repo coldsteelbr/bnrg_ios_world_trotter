@@ -1,0 +1,21 @@
+
+/* Class = "UITabBarItem"; title = "Convert"; ObjectID = "EAi-Am-Pbh"; */
+"EAi-Am-Pbh.title" = "Конвертировать";
+
+/* Class = "UILabel"; text = "is really"; ObjectID = "ETk-x4-QPn"; */
+"ETk-x4-QPn.text" = "на самом деле";
+
+/* Class = "UITextField"; placeholder = "value"; ObjectID = "Poj-6G-aDO"; */
+"Poj-6G-aDO.placeholder" = "значение";
+
+/* Class = "UILabel"; text = "degrees Celcius"; ObjectID = "Qbf-jK-ZSR"; */
+"Qbf-jK-ZSR.text" = "градусов Цельсия";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "TPz-ge-YEb"; */
+"TPz-ge-YEb.title" = "Карта";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "mu4-Ni-Ogf"; */
+"mu4-Ni-Ogf.text" = "100";
+
+/* Class = "UILabel"; text = "degrees Fahrenheit"; ObjectID = "zkb-b5-wn6"; */
+"zkb-b5-wn6.text" = "градусов Фаренгейта";
