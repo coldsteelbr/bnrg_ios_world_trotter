@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3095D61E20B3F925001B609F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3095D61D20B3F924001B609F /* MapKit.framework */; };
+		3095D62020B407EB001B609F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3095D61F20B407EB001B609F /* MapViewController.swift */; };
 		8403327520AF03A100D81334 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403327420AF03A100D81334 /* ConversionViewController.swift */; };
 		84A2E97020ADC0C2006FA19F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2E96F20ADC0C2006FA19F /* AppDelegate.swift */; };
 		84A2E97520ADC0C2006FA19F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A2E97320ADC0C2006FA19F /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		3095D61D20B3F924001B609F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3095D61F20B407EB001B609F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8403327420AF03A100D81334 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		84A2E96C20ADC0C2006FA19F /* bnrg_2_world_trotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bnrg_2_world_trotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A2E96F20ADC0C2006FA19F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				84D7243920B02C6B00694BA4 /* Support */,
 				84A2E97320ADC0C2006FA19F /* Main.storyboard */,
+				3095D61F20B407EB001B609F /* MapViewController.swift */,
 				8403327420AF03A100D81334 /* ConversionViewController.swift */,
 				84A2E97B20ADC0C2006FA19F /* Info.plist */,
 			);
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8403327520AF03A100D81334 /* ConversionViewController.swift in Sources */,
+				3095D62020B407EB001B609F /* MapViewController.swift in Sources */,
 				84A2E97020ADC0C2006FA19F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

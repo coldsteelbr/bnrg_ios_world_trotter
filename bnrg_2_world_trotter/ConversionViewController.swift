@@ -24,6 +24,22 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         updateCelciusLabel()
+        print("Conversion view controller loaded")
+    }
+    
+    // dark/light modes
+    override func viewWillAppear(_ animated: Bool) {
+        let date = Date()
+        let calendar = Calendar.current
+        let hour = calendar.component(.hour, from: date)
+        
+        print("Hour: \(hour)")
+        
+        if hour >= 16 {
+            view.backgroundColor = UIColor.brown
+        } else {
+            view.backgroundColor = UIColor.gray
+        }
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
