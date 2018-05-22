@@ -28,6 +28,17 @@ class ConversionViewController: UIViewController, UITextFieldDelegate{
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
+        // not allowing letters
+        let letters = NSCharacterSet.letters
+        for unicode in string.unicodeScalars{
+            if letters.contains(unicode){
+                print("Letters not allowed")
+                return false
+            }
+        }
+        
+        // avoiding double decimal point
+        
         let valueHasDot = textField.text?.range(of: ".")
         let enterHasDot = string.range(of: ".")
         

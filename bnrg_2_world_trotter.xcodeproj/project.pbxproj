@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3095D61E20B3F925001B609F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3095D61D20B3F924001B609F /* MapKit.framework */; };
 		8403327520AF03A100D81334 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403327420AF03A100D81334 /* ConversionViewController.swift */; };
 		84A2E97020ADC0C2006FA19F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2E96F20ADC0C2006FA19F /* AppDelegate.swift */; };
 		84A2E97520ADC0C2006FA19F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A2E97320ADC0C2006FA19F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3095D61D20B3F924001B609F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8403327420AF03A100D81334 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 		84A2E96C20ADC0C2006FA19F /* bnrg_2_world_trotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bnrg_2_world_trotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A2E96F20ADC0C2006FA19F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3095D61E20B3F925001B609F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3095D61C20B3F923001B609F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3095D61D20B3F924001B609F /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84A2E96320ADC0C1006FA19F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +92,7 @@
 				84A2E98320ADC0C2006FA19F /* bnrg_2_world_trotterTests */,
 				84A2E98E20ADC0C2006FA19F /* bnrg_2_world_trotterUITests */,
 				84A2E96D20ADC0C2006FA19F /* Products */,
+				3095D61C20B3F923001B609F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
