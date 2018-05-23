@@ -20,7 +20,11 @@ class MapViewController: UIViewController{
         view = mapView
         
         // segmented control
-        let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
+        let standardMapString = NSLocalizedString("Standard", comment: "Standard map view")
+        let hybridMapString = NSLocalizedString("Hybrid", comment: "Hybrid map view")
+        let satelliteMapString = NSLocalizedString("Satellite", comment: "Satellite map view")
+        let segmentedControl = UISegmentedControl(items: [standardMapString, hybridMapString, satelliteMapString])
+        
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.5) // translucent
         segmentedControl.selectedSegmentIndex = 0 // first (left) option
         
@@ -41,6 +45,10 @@ class MapViewController: UIViewController{
         topConstraint.isActive = true
         leadingConstraint.isActive = true
         trailingConstraint.isActive = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("About to show")
     }
     
     override func viewDidLoad() {
